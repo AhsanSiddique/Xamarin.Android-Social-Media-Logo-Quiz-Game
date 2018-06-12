@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <GridView
+            android:id="@+id/gvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+        <GridView
+            android:id="@+id/gvSuggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
